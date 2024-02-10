@@ -13,11 +13,13 @@ public class Main {
         phones.add(new MobilePhone(987654, "LG", 200, 5, false));
 
         for (Phone p : phones) {
+            System.out.println("___________________________");
             System.out.println(p);
             p.ring();
             System.out.print(p.getModelName() + "\n" + "\n");
             System.out.println("About phone:");
             p.aboutPhone(p);
+            System.out.println("___________________________");
         }
         System.out.println("After changes:");
 
@@ -32,7 +34,6 @@ public class Main {
         changedPhone2.setWeight(250);
 
         System.out.println(changedPhone2);
-
 
     }
 }
